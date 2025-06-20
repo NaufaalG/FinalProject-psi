@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chicko Game</title>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .area-bermain {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Landing Page -->
+  <div class="landing-page">
+    <div class="div">
+      <div class="overlap-group">
+        <div class="text-wrapper">LIFE</div>
+        <div class="text-wrapper-2">CHICKO</div>
+        <img class="cute-chicken-playing" src="assets/chicko1.png" alt="Chicko" />
+      </div>
+      <img class="group play-button" src="assets/playbutton.png" alt="Play Button" style="cursor:pointer;" />
+      <div class="overlap">
+        <div class="rectangle"></div>
+        <label for="chickoNameInput" class="text-wrapper-3">Name ur chicko !</label>
+        <input id="chickoNameInput" type="text" maxlength="12" placeholder="Masukkan nama..." style="margin-top:8px; width:80%; padding:6px 10px; border-radius:8px; border:1px solid #ccc; font-size:16px; font-family:'Fredoka One',sans-serif;" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Area Bermain -->
+  <div class="area-bermain">
+    <div class="div">
+      <div class="overlap-group">
+        <div class="rectangle"></div>
+        <div class="rectangle-2"></div>
+        <div class="rectangle-3"></div>
+        <img class="free-vector-hen-with" src="assets/chicko2.png" alt="Hen with Chick" />
+        <div class="text-wrapper" id="chickoNameDisplay">CHICKO'S NAME</div>
+        <div class="rectangle-4"></div>
+        <div class="rectangle-5"></div>
+        <div class="rectangle-6"></div>
+        <div class="rectangle-7"></div>
+        <div class="text-wrapper-2">100/100</div>
+        <div class="text-wrapper-3">100/100</div>
+        <div class="text-wrapper-4">100/100</div>
+        <div class="rectangle-8"></div>
+        <div class="rectangle-9"></div>
+        <div class="rectangle-10"></div>
+        <div class="rectangle-11"></div>
+        <img class="element" src="assets/food.png" alt="Chicko" />
+        <div class="rectangle-12"></div>
+        <div class="rectangle-13"></div>
+        <div class="rectangle-14"></div>
+        <div class="rectangle-15"></div>
+        <div class="rectangle-16"></div>
+        <img class="bubbles" src="assets/mandi.png" alt="Bubble" />
+        <div class="rectangle-17"></div>
+        <div class="rectangle-18"></div>
+        <div class="rectangle-19"></div>
+        <div class="rectangle-20"></div>
+        <div class="rectangle-21"></div>
+        <img class="download-removebg" src="assets/happybar.png" alt="Icon" />
+        <div class="rectangle-22"></div>
+        <div class="text-wrapper-5">Makan</div>
+        <div class="text-wrapper-6">Main</div>
+        <div class="text-wrapper-7">Mandi</div>
+        <img class="element-ece-dd-f" src="assets/food.png" alt="Chicko 2" />
+        <img class="img" src="assets/mandi.png" alt="Bubble 2" />
+        <img class="element-ee-ad-db" src="assets/main.png" alt="Icon" />
+        <img class="download-battery" src="assets/energy.png" alt="Battery" />
+        <img class="download-battery-2" src="assets/energy.png" alt="Battery 2" />
+        <img class="download-battery-3" src="assets/energy.png" alt="Battery 3" />
+      </div>
+      <div class="overlap"><img class="chest-wood" src="assets/penyimpanan.png" alt="Chest" /></div>
+      <div class="game-shop-red-wrapper"><img class="game-shop-red" src="assets/toko.png" alt="Shop" /></div>
+      <div class="overlap-2">
+        <div class="rectangle-23"></div>
+        <img class="group" src="assets/coin.png" alt="Coin" />
+        <div class="text-wrapper-8">10</div>
+      </div>
+      <div class="overlap-3">
+        <div class="overlap-4">
+          <div class="rectangle-24"></div>
+          <img class="download-removebg-2" src="assets/keluar.png" alt="Exit" />
+          <div class="text-wrapper-9">Keluar</div>
+        </div>
+        <div class="overlap-5">
+          <div class="rectangle-25"></div>
+          <img class="restart" src="assets/reset.png" alt="Reset" />
+          <div class="text-wrapper-10">Reset</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POPUP SAKIT (pindahkan ke luar area-bermain, langsung di body) -->
+  <div class="popup-sakit" style="display:none;">
+    <div class="popup-sakit-overlay"></div>
+    <div class="popup-sakit-content">
+      <img src="assets/chickosakit.png" class="popup-chicko-img" style="width:100px;display:block;margin:0 auto 10px;" />
+      <p>Ayam kamu sakit kamu harus segera sembuhkan!</p>
+      <button class="btn-obat">Obat</button>
+    </div>
+  </div>
+
+  <!-- Game Over Modal Popup -->
+  <div id="gameOverModal" class="modal-overlay" style="display:none;">
+    <div class="modal-box">
+      <img src="assets/ayamgoreng.png" alt="Ayam Goreng" class="modal-ayamgoreng" style="width:100px; margin-bottom: 16px;" />
+      <p class="modal-message">
+        <b>Yah Ayam kamu sudah jadi ayam goreng wkwkwk.</b>
+      </p>
+      <button id="keluarBtn" class="modal-exit-btn">
+        <img src="assets/keluar.png" alt="Keluar" class="modal-exit-icon" />
+        <span>Keluar</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- File JS eksternal kamu -->
+  <script src="main.js"></script>
+</body>
+</html>
